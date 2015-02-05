@@ -27,3 +27,10 @@ describe('getStock', function () {
     });
   });
 });
+
+describe('addStockToTable', function () {
+  it('should use stock info to append the table', function () {
+    var stock = { Name: "SuperCorp", Symbol: "SCRP", LastPrice: "12.34"};
+    addStockToTable(stock)
+  });
+});
