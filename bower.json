@@ -1,0 +1,22 @@
+{
+  "name": "stockmarket-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dotunolusoga/stockmarket-app",
+  "authors": [
+    "Dotun Olusoga <adedotun.olusoga@gmail.com>"
+  ],
+  "description": "A stockmarket app using Mocha as a testing suite",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0"
+  }
+}
