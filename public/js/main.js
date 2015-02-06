@@ -9,6 +9,11 @@ function refreshStockPrices(stocks) {
   });
 }
 
+function totalStocks (stocks) {
+  return _.reduce(stocks, function(prev, curr) {
+    return prev + curr.LastPrice;
+  }, 0);
+}
 
 function addStockToTable(stock) {
 
