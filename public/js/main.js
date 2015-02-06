@@ -1,20 +1,33 @@
 /*jshint: true */
 /* global async: false */
 
-'use strict';
+function refreshStockPrices(stocks) {
+  var $trs = $('tr');
+
+  _.forEach(stocks, function(stock, i) {
+    $($($trs[i]).find('td')[3]).text(stock.LastPrice);
+  });
+}
+
 
 function addStockToTable(stock) {
+
+  if(stock.Message) {
+    return;
+  };
+
   var $row = $('<tr></tr>');
 
   $row.append('<td>' + stock.Name + '</td>');
   $row.append('<td>' + stock.Symbol + '</td>');
-  $row.append('<td>' + stock.LastPrice +'</td>');
-  $row.append('<td>' + stock.LastPrice +'</td>');
+  $row.append('<td>' + stock.LastPrice + '</td>');
+  $row.append('<td>' + stock.LastPrice + '</td>');
 
   $('tbody').append($row);
 
   return $row;
-}
+};
+
 
 function getStock(symbol, cb) {
   var url = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + symbol;
@@ -26,19 +39,26 @@ function getStock(symbol, cb) {
 
 function getMultipleStocks(symbols, cb) {
   async.map(symbols,
-    function(symbol, innercb) {
-      getStock(symbol, function(stock) {
+    function (symbol, innercb) {
+      getStock(symbol, function(stock){
         innercb(null, stock);
-    });
-  },
-    function (err, stocks) {
+      });
+    },
+    function (err, stocks){
       cb(stocks);
     }
   );
-}
-
+ }
 
 function hello() {
   return 'world';
 }
+
+//function refreshStockPrices (stocks) {
+    //('tr').each(i, stock) {
+      //if(($('td')[1] === stock.Symbol)) {
+        //($('td'))[3] = stock.LastPrice;
+      //};
+    //}
+//}
 
