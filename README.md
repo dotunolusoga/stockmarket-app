@@ -6,3 +6,4 @@ Chai
 [![Coverage Status](https://coveralls.io/repos/dotunolusoga/stockmarket-app/badge.svg)](https://coveralls.io/r/dotunolusoga/stockmarket-app)
 [![npm Dependency Status](https://www.versioneye.com/user/projects/54d8df6dc1bbbda013000089/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54d8df6dc1bbbda013000089)
 [![bower Dependency Status](https://www.versioneye.com/user/projects/54d8df78c1bbbd9bd70000d5/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54d8df78c1bbbd9bd70000d5)
+[![NSS-Cohort-8](https://img.shields.io/badge/NSS-cohort--8-6a1ab0.svg)](http://i.imgur.com/hrq5wS9.jpg)
