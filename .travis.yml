@@ -1,14 +1,17 @@
 language: node_js
 node_js:
-- '0.10'
+ - '0.10'
 before_install:
-- npm install -g npm
-- npm install -g bower
-- bower install
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
+  - npm install -g npm
+  - npm install -g bower
+  - bower install
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 script:
-- npm run test-once
+  - npm run test-once
+after_script:
+  - cat ./coverage/PhantomJS*/lcov.info | ./node_modules/codeclimate-test-reporter/bin/codeclimate.js
 env:
   global:
-    secure: AOXhalNsmDHWP5WZr97w9E8gL1QUFuwTtoDta1JIk1rVPeJT349IXjME6KkVlJbjOJe5dn94sGG9CliIf9XLnsk2GMfT0w9a/hKXeJcJF/l+Vwqig7TPNEsKaHVAopCjzzWhPTTkMK0lWA3TwbPtcPSHQmGbplul978o789yvrc=
+    - secure: AOXhalNsmDHWP5WZr97w9E8gL1QUFuwTtoDta1JIk1rVPeJT349IXjME6KkVlJbjOJe5dn94sGG9CliIf9XLnsk2GMfT0w9a/hKXeJcJF/l+Vwqig7TPNEsKaHVAopCjzzWhPTTkMK0lWA3TwbPtcPSHQmGbplul978o789yvrc=
+    - secure: AquUpYU0SQH6cfCejvOCDVp4KeYL5djkdNxXj8qrV+M5/j/lUDMfh/Z12GblkCk/zM4YKiRjxxQqgXXEykPPTwBD7u+oIEeSSI+cHn92ilD0J2LltatTpiTy8mzj7CQXc+cFy+q0BalFB9USXzjBkQyTSyQRdp6NhKzlYGO3Uzw=
