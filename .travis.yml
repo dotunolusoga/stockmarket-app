@@ -1,6 +1,6 @@
 language: node_js
 node_js:
- - '0.10'
+  - '0.10'
 before_install:
   - npm install -g npm
   - npm install -g bower
@@ -15,3 +15,5 @@ env:
   global:
     - secure: AOXhalNsmDHWP5WZr97w9E8gL1QUFuwTtoDta1JIk1rVPeJT349IXjME6KkVlJbjOJe5dn94sGG9CliIf9XLnsk2GMfT0w9a/hKXeJcJF/l+Vwqig7TPNEsKaHVAopCjzzWhPTTkMK0lWA3TwbPtcPSHQmGbplul978o789yvrc=
     - secure: AquUpYU0SQH6cfCejvOCDVp4KeYL5djkdNxXj8qrV+M5/j/lUDMfh/Z12GblkCk/zM4YKiRjxxQqgXXEykPPTwBD7u+oIEeSSI+cHn92ilD0J2LltatTpiTy8mzj7CQXc+cFy+q0BalFB9USXzjBkQyTSyQRdp6NhKzlYGO3Uzw=
+    - secure: L0J0TDDw4zpuGUbs0LstzLVQT+VH7/xu6loRSjYXQROUTNx4rHoq39VmUm4uM2LnRLCuF3VcaWO0H2b5S2ZaokYTsUFYC2TYJfvmmLNwrwkDzC1ujMzj0h8qZ3hFvF/C7yf05rIj9Kfxq3L8QqjG9eepnnTYpHVQvYjy8rsFJUU=
+    - secure: L3S0TzsSxjNhLTN0PdPeMT3ubePi3RxYLiX2ffj+dPcALfVbBHLJ5AZsnbfsoZ+FjBgG/cTNYpo/zGGXruKy2/jflrFYTXI2lDnOfvnCOQk+9M2vz6WJGIvAic5JgF4+ZBfKRJrgz1YZgEsj6vQVQnARZkmZOnyCHHeskcYUEdE=
