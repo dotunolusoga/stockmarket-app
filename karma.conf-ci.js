@@ -6,7 +6,7 @@ module.exports = function(config) {
 
   var sauceLaunchers = {
     SL_IE10: {
-      base: 'SauseLabs',
+      base: 'SauceLabs',
       platform: 'Windows 7',
       browserName: 'internet explorer',
       version: '10.0'
